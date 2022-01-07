@@ -4,6 +4,8 @@ class PostsController < ApplicationController
   before_action :set_post, only: %i[show edit update destroy]
   before_action :authenticate_user!, except: %i[index show]
   before_action :is_admin!, except: %i[index show]
+  invisible_captcha only: [:create, :update], honeypot: :subtitle
+
 
   # GET /posts
   # GET /posts.json
