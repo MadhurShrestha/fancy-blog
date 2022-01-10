@@ -14,7 +14,7 @@ ActiveStorage.start()
 
 import 'jquery'
 import 'bootstrap'
-import './src/application';
+import './src/application.scss';
 global.$ =jQuery;
 
 require("trix")
