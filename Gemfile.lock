@@ -252,7 +252,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   listen (~> 3.3)
   open_uri_redirections
-  pg (~> 1.2, >= 1.2.3)
+  pg (~> 1.2)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.4)
