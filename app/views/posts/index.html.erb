@@ -4,7 +4,12 @@
             <%= will_paginate(@posts, :container => false) %>
         </div>
     </div>
-    <%= link_to "New Post", new_post_path %>
+    <% if current_user %>
+        <% if current_user.admin %>
+            <%= link_to "New Post", new_post_path %>
+        <% end %>
+    <% end %>
+
 
     <% @posts.each do |post| %>
     <div class="row">
