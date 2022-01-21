@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get 'history', to: 'comments#history'
 
 
-  devise_for :users, controllers: {registrations: "users/registrations" }
+  devise_for :users, controllers: {sessions: "users/sessions",registrations: "users/registrations"}
   root 'posts#index'
   get 'about', to: 'pages#about'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
